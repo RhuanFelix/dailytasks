@@ -38,6 +38,8 @@ public class Tarefa {
     @JoinColumn(name = "id_categoria")
     private Categoria categoria;
 
+    protected Tarefa() {}
+
     public Tarefa(String titulo, String descricao, LocalDate data, StatusTarefa statusTarefa, Conta conta, Categoria categoria) {
         this.titulo = titulo;
         this.descricao = descricao;

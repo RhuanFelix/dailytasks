@@ -22,6 +22,8 @@ public class Usuario {
     @Column(name = "tipo_usuario", length = 10, nullable = false)
     private String tipoUsuario = "comum";
 
+    protected Usuario() {}
+
     public Usuario(String nome, String email) {
         this.nome = nome;
         this.email = email;

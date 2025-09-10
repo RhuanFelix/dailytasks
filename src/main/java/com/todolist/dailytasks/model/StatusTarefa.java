@@ -19,6 +19,8 @@ public class StatusTarefa {
     @Column(nullable = false, length = 9)
     private String nome;
 
+    protected StatusTarefa() {}
+
     public StatusTarefa(String nome) {
         this.nome = nome;
     }

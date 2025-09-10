@@ -22,6 +22,8 @@ public class Conta {
     @JoinColumn(name = "id_usuario", nullable = false)
     private Usuario usuario;
 
+    protected Conta() {}
+
     public Conta(String senha, Usuario usuario) {
         this.senha = senha;
         this.usuario = usuario;
