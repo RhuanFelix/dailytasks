@@ -73,14 +73,16 @@ Para configurar a conexão com o banco de dados, vá no arquivo [application-exa
 ├── src
 │   ├── main
 │   │   ├── java/com/todolist/dailytasks
-│   │   │   ├── controller/                     # Endpoints REST
-│   │   │   ├── model/                          # Entidades JPA
-│   │   │   ├── repository/                     # Interfaces de acesso ao banco
-│   │   │   ├── service/                        # Lógica de negócio
-│   │   │   └── DailytasksApplication.java      # Classe principal do Spring Boot
+│   │   │   ├── configuration/                  # Configurações globais da aplicação (ex: segurança, CORS, beans)
+│   │   │   ├── controller/                     # Endpoints REST que recebem requisições HTTP
+│   │   │   ├── exceptions/                     # Classes de exceções personalizadas e tratamento global
+│   │   │   ├── model/                          # Entidades JPA que representam as tabelas do banco
+│   │   │   ├── repository/                     # Interfaces que acessam o banco via Spring Data JPA
+│   │   │   ├── service/                        # Camada de serviço com regras de negócio e lógica da aplicação
+│   │   │   └── DailytasksApplication.java      # Classe principal que inicia a aplicação Spring Boot
 │   │   └── resources
-│   │       └── application-example.properties  # Configuração de exemplo
-├── .gitignore                                  # Arquivos ignorados pelo Git
-├── pom.xml                                     # Configuração do Maven e dependências
-└── README.md                                   # Documentação do projeto
+│   │       └── application-example.properties  # Arquivo de exemplo com configurações da aplicação
+├── .gitignore                                  # Lista de arquivos e pastas ignorados pelo Git
+├── pom.xml                                     # Arquivo de configuração do Maven com dependências e plugins
+└── README.md                                   # Documentação principal do projeto (visão geral, instruções, etc.)
 ```
